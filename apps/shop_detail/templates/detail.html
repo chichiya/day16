@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block title %}
+    详情
+{% endblock %}
+{% block page_head %}
+
+{% endblock %}
+{% block page_main %}
+<div>
+<div id="search_img">
+
+</div>
+<div id="search_text">
+    <p>{{ shop.name }}</p>
+    <p>{{ shop.sub_title }}</p>
+    <p>王兵杰是大XX</p>
+    <p><span></span>全天猫实物商品通用</p>
+    <p><span>价格</span><span>{{ shop.original_price}}</span></p>
+     <p><span>促销价</span><span>{{ shop.promote_price}}</span></p>
+    <p><span>销量</span><span>2500</span>|<span>评价</span><span>500</span></p>
+    <input type="number" min="1"max="{{ shoop.stock }}">
+
+
+
+</div>
+</div>
+{% endblock %}
+{% block page_footer %}
+
+{% endblock %}

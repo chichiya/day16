@@ -1,0 +1,20 @@
+<div id="fl">
+
+    <ul>
+        {% for category in categories %}
+        <li><p >{{ category.name }}</p>
+            <ul class="clear">
+                {% for shop in category.shops %}
+                    <li  >
+                        <img src="/static/img/single/{{ shop.img.shop_img_id }}.jpg" >x
+                        <p id="name">{{ shop.name }}</p>
+                        <p id="price">{{ shop.promote_price }}</p>
+                    </li>
+                {% endfor %}
+            </ul>
+        </li>
+        {% endfor %}
+
+
+    </ul>
+</div>
